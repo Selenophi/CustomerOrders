@@ -3,7 +3,7 @@ package com.ecom.demo.controllers;
 
 import com.ecom.demo.models.Customer;
 import com.ecom.demo.services.CustomerService;
-//import io.swagger.v3.oas.annotations.tags.Tag;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 
-//@Tag(name = "Customer API", description = "Operations related to customers")
+@Tag(name = "Customer API", description = "Operations related to customers")
 @RequestMapping("/customers")
 public class CustomerController {
     @Autowired
